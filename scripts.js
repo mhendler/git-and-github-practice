@@ -1,11 +1,10 @@
 window.onload  = function() {
-	getUserEmail();
-	};
 
-function getUserEmail() {
+	function getUserEmail() {
 	var buttonSelect = document.querySelector("#button-yellow");
 	buttonSelect.addEventListener('click', email);
 }
+getUserEmail();
 
 function email() {
 	var email = prompt('Please enter your email'); 
@@ -14,5 +13,6 @@ function email() {
 		console.log(email);
 	}
 }
+};
 
 
